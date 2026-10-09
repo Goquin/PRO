@@ -7,8 +7,9 @@ import static java.lang.Math.*;
 
 public class Main {
     public static void main(String[] args) {
-/** Lo primero que hare sera crear las clases para el scanner y los numeros
- *  decimales redondeados a los dos primeros decimales y a los tres primeros decimales*/
+
+        /** Lo primero que hare sera crear las clases para el scanner y los numeros
+         *  decimales redondeados a los dos primeros decimales y a los tres primeros decimales*/
 
         Scanner sc = new Scanner(System.in);
 
@@ -16,10 +17,10 @@ public class Main {
         DecimalFormat df3 = new DecimalFormat("0.000");
         DecimalFormat dfentero = new DecimalFormat("#");
 
-/** A continuacion voy a solicitar los datos que son necesarios y añadir el valor
- *  de la constante de la densidad del aire*/
+        /** A continuacion voy a solicitar los datos que son necesarios y añadir el valor
+        *  de la constante de la densidad del aire*/
         System.out.println("Introduce la velocidad del viento (m/s): ");
-        int velViento = sc.nextInt();
+        float velViento = sc.nextFloat();
 
         System.out.println("Introduce el diámetro del motor (m): ");
         int diametroMotor = sc.nextInt();
