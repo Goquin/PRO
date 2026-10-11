@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 import static java.lang.Math.*;
 
-public class Main {
+public class Ejercicio1 {
     public static void main(String[] args) {
 
         /** Lo primero que hare sera crear las clases para el scanner y los numeros
@@ -35,9 +35,9 @@ public class Main {
          * de rafaga aleatorio, donde nos hara falta un numero entre 1 y 10, eligo estos
          * valores por la desviacion que me da el enunciado. Luego lo multiplicaremos por la velocidad del viento*/
 
-        double numRandom = random() * 10 + 1;
+        double numRandom = random();
 
-        double factor = 0.9 * numRandom * 0.20;
+        double factor = 0.9 + numRandom * 0.20;
 
         double velRafaga = velViento * factor;
 
