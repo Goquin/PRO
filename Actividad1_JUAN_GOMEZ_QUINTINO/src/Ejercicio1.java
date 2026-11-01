@@ -1,7 +1,11 @@
+/**
+ *
+ * @JUAN GOMEZ QUINTINO
+ * @VERSION 1.0
+ * @SINCE 2026-10-16
+ */
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-import java.text.DecimalFormat;
+import  java.text.DecimalFormat;
 import java.util.Scanner;
 import static java.lang.Math.*;
 
@@ -31,7 +35,7 @@ public class Ejercicio1 {
 
         double D_AIRE = 1.225;
 
-        /** Seguimos calculando la velocidad de rafaga, para ello primero calculare factor
+        /* Seguimos calculando la velocidad de rafaga, para ello primero calculare factor
          * de rafaga aleatorio, donde nos hara falta un numero entre 1 y 10, eligo estos
          * valores por la desviacion que me da el enunciado. Luego lo multiplicaremos por la velocidad del viento*/
 
@@ -54,12 +58,12 @@ public class Ejercicio1 {
 
         String revision = (radioMotor == r_calc) ? "(Correcto)" : "(Incorrecto)";
 
-        /** Procederemos a calcular la potencia teroica del viento, usadon la formula
+        /* Procederemos a calcular la potencia teroica del viento, usadon la formula
          * P=1/2 * densidad * A * v^3 (v sera igual a la velocidad de rafaga, no la base*/
 
         double potenciaTeorica = 0.5 * areaMotor *D_AIRE * pow(velRafaga, 3);
 
-        /** Por ultimo calcularemos la potencia neta del aerogenerador y la redondeamos*/
+        /* Por ultimo calcularemos la potencia neta del aerogenerador y la redondeamos*/
 
         double potenciaNeta = (potenciaTeorica * (rendimiento/100.0));
 
@@ -74,7 +78,7 @@ public class Ejercicio1 {
 
         double energiaJoules = potenciaNeta * segObs;
 
-        /** Lo pasamos a Wh, lo redondeamos y lo pasamos a kWh enteros*/
+        /* Lo pasamos a Wh, lo redondeamos y lo pasamos a kWh enteros*/
 
         double energiaWh = energiaJoules / 3600.0; // 1Wh = 3600 J//
 
@@ -82,11 +86,11 @@ public class Ejercicio1 {
 
         double energiakWh = energiaWhRedon / 1000.0;
 
-        /** Usaremos una ternaria para saber si imprimir alta o normal*/
+        /* Usaremos una ternaria para saber si imprimir alta o normal*/
 
         String riesgo = (potenciaNeta > 5000) ? "ALTA" : "NORMAL";
 
-        /** Para terminar mostraremos los resultados en los formatos decimales deseados*/
+        /* Para terminar mostraremos los resultados en los formatos decimales deseados*/
 
         System.out.println("---RESULTADOS---");
         System.out.println("Velocidad base (m/s): " + df2.format(velViento));
