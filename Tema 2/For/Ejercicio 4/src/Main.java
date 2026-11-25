@@ -10,7 +10,7 @@ public class Main {
         int num = sc.nextInt();
 
         for (int i = 1; i <= num ; i= i + 2){
-            if (num == i){
+            if (num == i || (num-1) == i){
                 System.out.print(i);
             } else {
                 System.out.print(i + ", ");
