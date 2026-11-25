@@ -8,6 +8,7 @@ public class Ejercicio14 {
         int fac;
         int facTotal = 0;
         int fac600 = 0;
+        int litros1 = 0;
 
 
 
@@ -33,11 +34,14 @@ public class Ejercicio14 {
             }
 
             if (i==1) {
-                System.out.println(" El numero de de litros del producto 1 fue: " + litros);
+                litros1 = litros;
             }
+
+            sc.nextLine();
         }
 
         System.out.println("La facturacion total fue: " + facTotal);
+        System.out.println("Los litros del producto uno fueron: " + litros1);
         System.out.println("El numero de facturas superior a 600 fue: " + fac600);
     }
 }
